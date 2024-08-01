@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <img src="logo.png" class="logo">
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+    </nav>
+    <div class="header-text">
+      <h1>Hello I'm <span>Ranjan</span> </h1>
+    </div>
+    <!-- --about---->
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+       <div >
+        <h1 class="about-col2">About me </h1>
+        <p class="para">Hello! I'm Ranjan, a computer science student at JNNCE college. I'm passionate about software development and specialize in web development. Through academic projects and internships, I've gained hands-on experience. I am eager to collaborate on innovative projects and contribute to solving complex challenges. Explore my portfolio to see my work and connect with me for potential opportunities!</p>
+        <div class="tabs">
+          <p class="tab-links active "onclick="opentab('Skills')">Skills</p>
+          <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+          <p class="tab-links"onclick="opentab('Education')">Education</p>
+        </div>
+        <div class="tab-contents activetab" id="Skills">
+          <ul>
+            <li><span>Technical</span><br>-> C <br>-> C++ <br>-> HTML <br>-> CSS <BR>-> PYTHON <BR>-> ReactJS <BR></BR></BR></BR></li>
+            
+          </ul>
+        </div>
+        <div class="tab-contents" id="Experience">
+          <ul>
+            <li><span>Ekatva Innovation </span><br>08/2023 - 09/2023 <br>• Data science, Big data and Advanced Python API <br>
+              ➢ Designed and implemented scalable data processing pipelines using Python APIs, such as Pandas 
+              and PySpark, to handle large datasets efficiently. <br>
+              ➢ Utilized libraries such as Matplotlib and Plotly to create interactive and insightful data visualizations, 
+              facilitating better understanding of complex datasets.</li>
+             
+          </ul>
+        </div>
+        <div class="tab-contents" id="Education">
+          <ul>
+            <li><span>BACHELOR OF ENGINEERING (CSE):</span> <br> 2020 – 2024 (CGPA – 8.2) <br> <br><span>
+              PRE-UNIVERSITY: </span><br> 2020 (Percentage – 89.33%) <br> <br><span>
+              SSLC: </span> <br>2018 (Percentage – 89.44%)</li>
+          </ul>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+
+  <!--project-->
+  <div id="project">
+    <div class="container">
+      <h1 class="title">My Projects </h1>
+      <div class="worklist">
+        <div class="work">
+          <h1 class="work1"><span>1.Travel agency Mangenet System</span> <br> Description- <br> ➢ Built a Database for Travel agency details using Php as backend, java as frontend and MYSQL as 
+            database. <br>
+            ➢ This project helps in maintain its vehicle details, employee details, trip detail and customer’s 
+            details. <br> <br>
+          Project Link : <a href="https://github.com/ranjanpn/Flappy-bird.git"> Click here</a> </h1>
+
+
+            <h1 class="work1"><span>2.FLAPPY BIRD GAME (Computer Graphics). </span> <br> ➢ Built a simple game in computer graphics using C language and OpenGL API’S. <br>
+              ➢ The Game is presented by using various Standard OpenGL and user defined functions. <br><br>
+              Project Link : <a href="https://github.com/ranjanpn/Flappy-bird.git"> Click here</a>  </h1>
+
+
+
+              <h1 class="work1"><span>3.SMART BOOK READER FOR VISUAL IMPARIED PEOPLE USING IoT
+                 </span> <br> ➢ Built a simple smart book reader for blind people using raspberry pi and python <br>
+                 ➢ This project aims to develop a system that converts Braille text into voice output, providing a 
+                 seamless reading experience for visually impaired individuals. <br><br>
+                 Project Link : <a href="https://github.com/ranjanpn/project.git"> Click here</a></h1>
+
+
+              
+        </div>
+
+      </div>
+  
+    </div>
+  </div>
+<!--contact-->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contactleft">
+        <h1 class="title">Contact Me</h1>
+        <p class="word"><a href="">ranjanpnsmg@gmail.com</a>       7795369554</p>
+        
+        <div class="icons">
+          <a href="https://www.instagram.com/ranjanpn/">instagram</a>
+          <a href="https://x.com/RanjanPN2?t=MQ9dszORi2oLyIiPsd6iTg&s=09 ">twitter</a>
+          <a href="https://linkedin.com/in/ranjanpn">Linkedin</a>
+          <a href="https://github.com/ranjanpn/project.git">github</a>
+          
+        </div>
+        <a href="Final resume.pdf" class="btn">Download CV</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+  <script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+      for (tablink of tablinks ){
+        tablink.classList.remove("active")
+      }
+      for (tabcontent of tabcontents){
+        tabcontent.classList.remove("activetab")
+      }
+      event.currentTarget.classList.add("active")
+      document.getElementById(tabname).classList.add("activetab")
+
+    }
+
+  
+  </script>
+</body>
+</html>
